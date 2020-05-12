@@ -1,0 +1,60 @@
+// Elements
+
+
+// base
+
+html {
+    font-size: $s-font-size-base;
+    font-family: $s-font-family-base;
+}
+
+body {
+    margin: $s-measure-small;
+    width: $s-page-width-max;
+    max-width: calc(100% - #{$s-measure-small});
+}
+
+
+// layout
+
+header,
+section {
+    margin-bottom: $s-measure-large;
+}
+
+header {
+    border-bottom: solid 1px black;
+    padding-bottom: $s-measure-medium;
+}
+
+
+// form
+
+fieldset {
+    border: solid 1px grey;
+    margin-bottom: $s-measure-small;
+}
+
+input {
+    width: 88%;
+}
+
+textarea {
+    border: solid 3px lightgrey;
+    height: $s-measure-large;
+    resize: none;
+    width: 98%;
+}
+
+
+// typography
+
+h1 {
+    border-bottom: solid 1px black;
+    padding-bottom: $s-measure-medium;
+}
+
+p {
+    display: inline-block;
+    word-wrap: break-word;
+}

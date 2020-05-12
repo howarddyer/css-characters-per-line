@@ -1,0 +1,17 @@
+@mixin cpl-font-size($width, $cpl, $font-type) {
+
+    @if map-has-key($s-font-type-constants, $font-type) {
+
+        $constant-value: map-get($s-font-type-constants, $font-type);
+        $cpl-font-size-value: ($width / $cpl) * $constant-value;
+
+        font-size: #{$cpl-font-size-value + "px"};
+        width: #{$width + "px"};
+
+    } @else {
+
+        @error "The value `#{$font-type}` passed to cpl-font-size is not valid. Please use serif, sans-serif or monospace.";
+
+    };
+
+}

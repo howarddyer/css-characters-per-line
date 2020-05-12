@@ -1,0 +1,73 @@
+// Components
+
+.c-cpl-text {
+    line-height: 1.5;
+    width: 100%;
+
+    &--customiser {
+        @include cpl-font-size(940, 50, monospace);
+    }
+
+    &--responsive {
+        @include cpl-font-size(450, 50, monospace);
+
+        @media (min-width: 640px) {
+            @include cpl-font-size(600, 50, monospace);
+        }
+
+        @media (min-width: 940px) {
+            @include cpl-font-size(900, 50, monospace);
+        }
+    }
+
+    &--rem {
+        font-size: 1rem;
+        width: 28rem;
+
+        @media (min-width: 640px) {
+            font-size: 1.25rem;
+            width: 35rem;
+        }
+
+        @media (min-width: 940px) {
+            font-size: 1.5rem;
+            width: 44rem;
+        }
+    }
+
+    &--ch {
+        font-size: 1rem;
+        max-width: 50ch;
+
+        @media (min-width: 640px) {
+            font-size: 1.25rem;
+        }
+
+        @media (min-width: 940px) {
+            font-size: 1.5rem;
+        }
+
+    }
+
+    &--ch-use-case {
+        font-size: 1.2rem;
+        max-width: 45ch;
+        line-height: 1.8;
+
+        @media (min-width: 640px) {
+            max-width: 55ch;
+        }
+
+        @media (min-width: 940px) {
+            max-width: 75ch;
+        }
+
+    }
+
+};
+
+.c-link {
+    &--selected {
+        color: green;
+    }
+}

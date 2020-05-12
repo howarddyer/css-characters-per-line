@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Characters Per Line experiment</h1>
+    
+        <nav>
+            <a href="./cpl-customiser.html" class="c-link--selected">CPL Customiser</a> |
+            <a href="./cpl-responsive.html">CPL Responsive</a> |
+            <a href="./rem-and-ch.html">REM and CH</a> |
+            <a href="./ch-use-case.html">CH Use Case</a>
+        </nav>
+    </header>
+
+    <section data-cpl-section>
+
+        <h2 id="customiser">CPL Customiser</h2>
+        
+        <fieldset>
+            <legend>Text: </legend>
+            <textarea placeholder="Enter custom text" data-type="text" data-input></textarea>
+        </fieldset>
+        <fieldset>
+            <legend>Element width: </legend>
+            <input type="range" min="300" max="940" value="940" data-type="width" data-input>
+            <span data-width-value>940</span>
+        </fieldset>
+        <fieldset>
+            <legend>Characters per line:</legend>
+            <input type="range" min="10" max="100" value="50" data-type="cpl" data-input>
+            <span data-cpl-value>50</span>
+        </fieldset>
+        <fieldset>
+            <legend>Max characters (actual):</legend>
+            <label data-max-value></label>
+        </fieldset>
+
+        <p class="c-cpl-text c-cpl-text--customiser" data-cpl-text>As we refine our methods of responsive web design, we've increasingly focused on measure (another word for "line length") and its relationship to how people read.</p>
+
+    </section>
+
+    <script src="javascript/cpl.js"></script>
+
+</body>
+
+</html>
